@@ -1,3 +1,27 @@
+<!--
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a href="#" class="navbar-brand">Recipe Book</a>
+      </div>
+
+      <div class="collapse navbar-collapse">
+        <ul class="nav navbar-nav">
+          <li><a href="#" (click)="onSelect('recipe')">Recipes</a></li>
+          <li><a href="#" (click)="onSelect('shopping-list')">Shopping List</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li class="dropdown" appDropdown>
+            <a href="#" class="dropdown-toggle" role="button">Manage <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Save Data</a></li>
+              <li><a href="#">Fetch Data</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav> -->
   <!-- <div ngbDropdown class="dropdown">
     <button ngbDropdownToggle class="btn btn-secondary" type="button" id="dropdownMenuButton1" aria-expanded="false">
   Dropdown button
@@ -16,25 +40,25 @@
     </div>
 
     <div  class="collapse navbar-collapse" >
-      <!-- <button ngbDropdownToggle class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button> -->
-      <!-- <button ngbDropdownToggle class="navbar-toggler" id="navbarDrop">
-      </button> -->
       <ul class="navbar-nav mr-auto">
-        <li><a href="#" (click)="onSelect('recipe')">Recipes</a></li>
-        <li><a href="#" (click)="onSelect('shopping-list')">Shopping List</a></li>
+        <li class="nav-item"><a  class="nav-link" href="#" (click)="onSelect('recipe')">Recipes</a></li>
+        <li class="nav-item"><a  class="nav-link" href="#" (click)="onSelect('shopping-list')">Shopping List</a></li>
       </ul>
-      <ul class="nav navbar-nav navbar-right">
-        <li class="nav-item dropdown" ngbDropdown>
+      <ul class="navbar-nav " >
+        <li class="dropdown" >
           <a
-          ngbDropdownToggle
             class="nav-link dropdown-toggle"
-            id="navbarDrop" role="button"
-            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="navbarDrop">Manage <span class="caret"></span></a>
-          <ul  ngbDropdownMenu class="dropdown-menu" aria-labelledby="navbarDrop">
-            <li ngbDropdownItem class="dropdown-item"><a href="#">Save Data</a></li>
-            <li ngbDropdownItem class="dropdown-item"><a href="#">Fetch Data</a></li>
+            id="navbarDropdown" role="button"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >Manage <span class="caret"></span></a>
+          <ul
+            class="dropdown-menu"
+            aria-labelledby="navbarDropdown"
+           >
+            <li ><a class="dropdown-item" href="#">Save Data</a></li>
+            <li ><a class="dropdown-item" href="#">Fetch Data</a></li>
           </ul>
         </li>
       </ul>
