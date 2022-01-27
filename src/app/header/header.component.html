@@ -41,8 +41,8 @@
 
     <div  class="collapse navbar-collapse" >
       <ul class="navbar-nav mr-auto">
-        <li class="nav-item"><a  class="nav-link" href="#" (click)="onSelect('recipe')">Recipes</a></li>
-        <li class="nav-item"><a  class="nav-link" href="#" (click)="onSelect('shopping-list')">Shopping List</a></li>
+        <li routerLinkActive="active"><a  class="nav-link" routerLink="/recipes"  >Recipes</a></li>
+        <li routerLinkActive="active"><a  class="nav-link" routerLink="/shopping-list" >Shopping List</a></li>
       </ul>
       <ul class="navbar-nav " >
         <li class="dropdown" >
@@ -57,8 +57,8 @@
             class="dropdown-menu"
             aria-labelledby="navbarDropdown"
            >
-            <li ><a class="dropdown-item" href="#">Save Data</a></li>
-            <li ><a class="dropdown-item" href="#">Fetch Data</a></li>
+            <li ><a class="dropdown-item" style="cursor: pointer" >Save Data</a></li>
+            <li ><a class="dropdown-item" style="cursor: pointer">Fetch Data</a></li>
           </ul>
         </li>
       </ul>

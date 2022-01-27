@@ -1,5 +1,5 @@
 import { Component, EventEmitter, OnInit, Output } from '@angular/core';
-import { Recipe } from '../recipes/recipe.model';
+
 
 @Component({
   selector: 'app-header',
@@ -14,8 +14,6 @@ export class HeaderComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  onSelect(feature: string){
-    this.featureSelected.emit(feature);
-  }
+
 
 }
